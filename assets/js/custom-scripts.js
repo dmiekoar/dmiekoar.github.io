@@ -66,6 +66,34 @@
              $(this).find(".owl-item.active .slide-img").addClass("fadeInRight animated").css("opacity","1");
          });
      });
+      
+
+     $(window).on('load', function() {
+      $('#header-slider #animation-slide').owlCarousel({
+             autoHeight: true,
+             items: 1,
+             loop: true,
+             autoplay: true,
+             dots: false,
+             nav: false,
+             autoplayTimeout: 3000,
+             navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
+             animateIn: "zoomIn",
+             animateOut: "fadeOutDown",
+             autoplayHoverPause: false,
+             touchDrag: true,
+             mouseDrag: true
+         });
+       $("#animation-slide").on("translate.owl.carousel", function () {
+           $(this).find(".owl-item .slide-text > *").removeClass("fadeInUp animated").css("opacity","0");
+           $(this).find(".owl-item .slide-img").removeClass("fadeInRight animated").css("opacity","0");
+       });          
+       $("#animation-slide").on("translated.owl.carousel", function () {
+           $(this).find(".owl-item.active .slide-text > *").addClass("fadeInUp animated").css("opacity","1");
+           $(this).find(".owl-item.active .slide-img").addClass("fadeInRight animated").css("opacity","1");
+       });
+     });
+    
    
     /*
     |====================
@@ -155,7 +183,12 @@
         .empty()
         .append('<i class="fa fa-circle"></i>');                
     });
-    
+    $(".determinate").each(function(){
+      var width = $(this).text();
+      $(this).css("width", width)
+        .empty()
+        .append('<i class="fas fa-circle"></i>');                
+    });
     /*
     |=================
     | Portfolio mixin
@@ -281,7 +314,31 @@
           }
         }
     });     
-    
+    $('.mh-single-project-slide-by-side').owlCarousel({
+      loop: false,
+      responsiveClass: true,
+      nav: true,
+      navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
+      dots: false,
+      autoplay: false,
+      smartSpeed: 450,
+      stopOnHover : true,
+      animateIn: 'slideInRight',
+      animateOut: 'slideOutLeft',
+      autoplayHoverPause: true,
+      pagination: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 1,
+        },
+        1170: {
+          items: 1,
+        }
+      }
+    }); 
     /*
     |=================
     | Single client review

@@ -38,12 +38,18 @@
 
 .mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fa {
   color: #5da4d9; }
-
+.mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fas {
+    color: #5da4d9; }
+.mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fab {
+      color: #5da4d9; }
 .mh-home .mh-header-info .mh-promo span {
   background-color: #5da4d9; }
 .mh-home .mh-header-info ul li:hover .fa {
   color: #5da4d9; }
-
+.mh-home .mh-header-info ul li:hover .fab {
+    color: #5da4d9; }
+.mh-home .mh-header-info ul li:hover .fas {
+      color: #5da4d9; }
 .mh-about-tag ul li span {
   border: 1px solid #5da4d9; }
   .mh-about-tag ul li span:hover {
@@ -70,6 +76,10 @@
   background-color: #4898d4; }
 .mh-pricing .mh-pricing .fa {
   color: #d9eaf6; }
+.mh-pricing .mh-pricing .fab {
+    color: #d9eaf6; }
+.mh-pricing .mh-pricing .fas {
+  color: #d9eaf6; }
 .mh-pricing .mh-pricing h5 {
   color: #5da4d9; }
 
@@ -91,7 +101,10 @@
 
 .mh-footer-address .mh-address-footer-item .each-icon .fa {
   border-color: #5da4d9; }
-
+.mh-footer-address .mh-address-footer-item .each-icon .fab {
+    border-color: #5da4d9; }
+.mh-footer-address .mh-address-footer-item .each-icon .fas {
+      border-color: #5da4d9; }
 .old .navbar-collapse {
   background-color: #5da4d9; }
 .old .navbar-header .navbar-toggler .icon-bar {
