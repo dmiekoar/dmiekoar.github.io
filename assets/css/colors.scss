@@ -50,6 +50,44 @@
        }
     }
 }
+.mh-home-2 {
+    .mh-header-info {
+        ul {
+           li {
+
+           }
+           &.mh-home-contact {
+               li {
+                    &:hover {
+                        .fab {
+                            color: $main-color;
+                        }
+                    }
+               }
+               
+           }
+       }
+    }
+}
+.mh-home-2 {
+    .mh-header-info {
+        ul {
+           li {
+
+           }
+           &.mh-home-contact {
+               li {
+                    &:hover {
+                        .fas {
+                            color: $main-color;
+                        }
+                    }
+               }
+               
+           }
+       }
+    }
+}
 .mh-home {
     .mh-header-info {
         .mh-promo {
@@ -61,6 +99,42 @@
             li {
                 &:hover {
                     .fa {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+.mh-home {
+    .mh-header-info {
+        .mh-promo {
+            span {
+                background-color: $main-color;
+            }
+        }
+        ul {
+            li {
+                &:hover {
+                    .fab {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+.mh-home {
+    .mh-header-info {
+        .mh-promo {
+            span {
+                background-color: $main-color;
+            }
+        }
+        ul {
+            li {
+                &:hover {
+                    .fas {
                         color: $main-color;
                     }
                 }
@@ -141,7 +215,36 @@
         }
     }
 }
-
+.mh-pricing {
+    .mh-pricing {
+        &:hover {
+            .btn {
+                background-color: darken($main-color, 5%);
+            }
+        }
+        .fab {
+            color: lighten($main-color, 30%);
+        }
+        h5 {
+            color: $main-color;
+        }
+    }
+}
+.mh-pricing {
+    .mh-pricing {
+        &:hover {
+            .btn {
+                background-color: darken($main-color, 5%);
+            }
+        }
+        .fas {
+            color: lighten($main-color, 30%);
+        }
+        h5 {
+            color: $main-color;
+        }
+    }
+}
 
 .mh-blog {
     .mh-blog-item {
@@ -185,7 +288,24 @@
         }
     }
 }
-
+.mh-footer-address {
+    .mh-address-footer-item {
+        .each-icon {
+            .fab {
+                border-color: $main-color;
+            }            
+        }
+    }
+}
+.mh-footer-address {
+    .mh-address-footer-item {
+        .each-icon {
+            .fas {
+                border-color: $main-color;
+            }            
+        }
+    }
+}
 
 
 .old {
